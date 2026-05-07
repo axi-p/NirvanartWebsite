@@ -754,7 +754,8 @@ footer {
 }
 
 /* ── SLIDESHOW ── */
-.slideshow {
+/* ── HOMAM SLIDESHOW (scoped) ── */
+.homam-photos .slideshow {
   position: relative;
   margin-top: 2.5rem;
   border-radius: 8px;
@@ -765,20 +766,20 @@ footer {
   aspect-ratio: 16 / 9;
 }
 
-.slides-track {
+.homam-photos .slides-track {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.slide {
+.homam-photos .slide {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: opacity 0.7s ease;
 }
-.slide.active { opacity: 1; }
-.slide img {
+.homam-photos .slide.active { opacity: 1; }
+.homam-photos .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -786,7 +787,7 @@ footer {
 }
 
 /* Arrows */
-.slide-arrow {
+.homam-photos .slide-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -806,15 +807,15 @@ footer {
   transition: all 0.3s ease;
   backdrop-filter: blur(6px);
 }
-.slide-arrow:hover {
+.homam-photos .slide-arrow:hover {
   background: var(--purple);
   transform: translateY(-50%) scale(1.08);
 }
-.slide-arrow.prev { left: 1rem; }
-.slide-arrow.next { right: 1rem; }
+.homam-photos .slide-arrow.prev { left: 1rem; }
+.homam-photos .slide-arrow.next { right: 1rem; }
 
 /* Dots */
-.slide-dots {
+.homam-photos .slide-dots {
   position: absolute;
   bottom: 1rem;
   left: 50%;
@@ -823,7 +824,7 @@ footer {
   gap: 0.5rem;
   z-index: 2;
 }
-.dot {
+.homam-photos .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -833,17 +834,17 @@ footer {
   padding: 0;
   transition: all 0.3s ease;
 }
-.dot:hover { background: rgba(255,255,255,0.75); }
-.dot.active {
+.homam-photos .dot:hover { background: rgba(255,255,255,0.75); }
+.homam-photos .dot.active {
   background: #fff;
   width: 22px;
   border-radius: 4px;
 }
 
 @media (max-width: 768px) {
-  .slide-arrow { width: 36px; height: 36px; font-size: 1.3rem; }
-  .slide-arrow.prev { left: 0.5rem; }
-  .slide-arrow.next { right: 0.5rem; }
+  .homam-photos .slide-arrow { width: 36px; height: 36px; font-size: 1.3rem; }
+  .homam-photos .slide-arrow.prev { left: 0.5rem; }
+  .homam-photos .slide-arrow.next { right: 0.5rem; }
 }
 /* ── QUICK NAV GRID ── */
 #quick { padding:5rem 3rem; transition:var(--trans); }
