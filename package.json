@@ -1,0 +1,16 @@
+{
+  "name": "nirvanart-website",
+  "version": "1.0.0",
+  "description": "Nirvanart Website with Vercel Analytics",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static HTML site - no build needed'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
